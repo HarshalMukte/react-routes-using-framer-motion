@@ -1,0 +1,120 @@
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(147, 232, 253);
+}
+.header{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  color: rgb(3, 21, 37);
+  z-index: 1000;
+}
+.header ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header ul li{
+  height: 100%;
+  list-style: none;
+}
+.header ul li a{
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 23px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0px 10px;
+  font-weight: 700;
+  font-family: cursive,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing:2px;
+  color: inherit;
+  transition: .3s;
+  border-bottom: 2px solid transparent;
+}
+.header ul li a.active{
+  border-color: rgb(3, 21, 37);
+}
+.home{
+  width: 100%;
+  height: 100vh;
+  /* padding-top: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home .content {
+  position: relative;
+}
+.home .content .productText{  
+  position: absolute;
+  bottom: -30px;
+  font-size: 22px;
+  font-family: cursive;
+  right: 5px;
+  cursor: grab;
+}
+.home .image{
+  width: 320px;
+  height: 380px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+.home .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.product{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.product .content{
+  padding-top: 50px;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  z-index: 1;
+}
+.product .content .productName{
+  width: 100%;
+  text-align: center;
+  font-size: min(30vw, 350px);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product .content .productName span{
+  color: rgb(147, 232, 253);
+  text-shadow: -10px -10px 5px rgb(6, 77, 95),
+  3px 3px 6px rgba(255, 255, 255, 0.897);
+  font-family: cursive;
+  display: inline-block;
+}
+.product .image{
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  box-shadow: -5px -5px 10px rgb(255, 255, 255);
+}
+.product .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
